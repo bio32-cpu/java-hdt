@@ -5,7 +5,7 @@ public class Order {
     private String id;
     private List<Product> products = new ArrayList<>();
     
-}
+
     public Order(String id) {
     this.id = id;
 }
@@ -37,6 +37,9 @@ public class Order {
         totalPrice += product.getPrice();
     }
     return totalPrice;
+}
+public String toString(){
+    return "order :" +"id=" + id + ',' +"products =" + products ;
 }
 }
 

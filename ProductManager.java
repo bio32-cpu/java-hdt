@@ -1,33 +1,50 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class ProductManager {
-    private List<Product> products = new ArrayList<>();
-    
-    public List<Product> getProducts() {
-        return products;
-    }
-    
-    public void addProduct(Product product) {
-        products.add(product);
-    }
-    
-    public void updateProduct(Product product) {
-        
-        for (int i = 0; i < products.size(); i++) {
-            Product p = products.get(i);
-            if (p.getCode().equals(product.getCode())) {
-                
-                p.setName(product.getName());
-                p.setPrice(product.getPrice());
-                break;
-            }
-        }
-    }
-    
-    public void removeProduct(Product product) {
-        products.remove(product);
-    }
+   private ArrayList<Product> productList;
+   
+   public ProductManager() {
+      productList = new ArrayList<>();
+   }
+   
+   public void addProduct(Product product) {
+      productList.add(product);
+      System.out.println("add pass");
+   }
+   
+   public void removeProduct(int productId) {
+      for (Product product : productList) {
+         if (product.getId() == productId) {
+            productList.remove(product);
+            System.out.println("remove pass ");
+            return;
+         }
+      }
+      System.out.println("lỗi");
+   }
+   
+   public void displayProducts() {
+      System.out.println("danh sách product ");
+      for (Product product : productList) {
+         System.out.println(product);
+      }
+   }
+   
+   public void updateProduct(int productId, String name, double price) {
+      for (Product product : productList) {
+         if (product.getId() == productId) {
+            product.setName(name);
+            product.setPrice(price);
+            System.out.println("cập nhật pass");
+            return;
+         }
+      }
+      System.out.println("lỗi");
+   }
+   
+   public ArrayList<Product> getProductList() {
+      return productList;
+   }
 }
-//17 vòng for để tìm kiếm sản phẩm
+//sử dụng ArrayList<Product>.
 //21 cập nhật thông tin về sp

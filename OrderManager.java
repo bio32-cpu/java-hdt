@@ -23,7 +23,7 @@ public class OrderManager {
             orderMap.put(orderId, order);
             dataAccess.saveOrders(orderMap); 
         } else {
-            System.out.println("Không tìm thấy đơn hàng có mã " + orderId);
+            System.out.println("Không tìm thấy " + orderId);
         }
     }
 
@@ -32,7 +32,7 @@ public class OrderManager {
             orderMap.remove(orderId);
             dataAccess.saveOrders(orderMap); 
         } else {
-            System.out.println("Không tìm thấy đơn hàng có mã " + orderId);
+            System.out.println("Không tìm thấy " + orderId);
         }
     }
 
