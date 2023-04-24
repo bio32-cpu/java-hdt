@@ -1,4 +1,4 @@
-# JavaFx_QuanLyCuaHangTienLoi
+# JavaFx_QuanLyBanHang
 Quản lý cửa hàng tiện lợi sử dụng JavaFx
 
 Yêu cầu: Java 8, JavaFx.
