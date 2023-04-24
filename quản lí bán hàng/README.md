@@ -1,13 +1,6 @@
 # JavaFx_QuanLyCuaHangTienLoi
 Quản lý cửa hàng tiện lợi sử dụng JavaFx
 
-Created ACHA TEAM - UIT
-- Bùi Nguyễn Hoàng Anh _ 15520012 
-- Phan Thế Anh _ 15520027
-- Lê Doãn Cường _ 15520077
-- Nguyễn Quang Hải _ 15520187 
-
-
 Yêu cầu: Java 8, JavaFx.
 
 Sử dụng JavaFx để tạo phần mềm, sử dụng các lệnh cơ bản nhất để tạo các biểu mẫu báo cáo, thống kê, hiển thị thông tin.
